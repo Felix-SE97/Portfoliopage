@@ -285,8 +285,8 @@ nav{
 
 @media (max-width:1000px){
     .content{
-        padding-left:15px;
-        padding-right:15px;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 
@@ -297,7 +297,7 @@ nav{
     
     .card{
         margin-bottom: 3rem;
-        max-width: 400px;
+        max-width: 300px;
         margin-left: auto;
         margin-right: auto;
     }
