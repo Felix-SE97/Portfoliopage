@@ -284,22 +284,11 @@ nav{
 }
 
 /* Media queries */
-.klein{
-    display:hidden
-}
 
 @media (max-width:1000px){
     .content{
         padding-left: 15px;
         padding-right: 15px;
-    }
-}
-@media (max-width:950px){
-    .groß{
-        display: hidden;
-    }
-    .klein{
-        display: unset;
     }
 }
 
