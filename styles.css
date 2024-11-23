@@ -285,8 +285,8 @@ nav{
 
 @media (max-width:1000px){
     .content{
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
