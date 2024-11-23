@@ -1,0 +1,324 @@
+/* General */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.content{
+    width: 100%;
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+/* Navbar */
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(34,34,34);
+    
+}
+
+#navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+
+#navbar li{
+    display: flex;
+    align-items: center;  
+}
+
+#navbar li .nav-link{
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    width: 10rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: 0.3s ease-out;
+    color:rgb(0, 162, 255);
+    font-family: 'Press Start 2P';
+}
+
+#navbar li:hover .nav-link{
+    background-color: rgb(0, 162, 255);
+    color: white;
+    font-weight: 600;
+}
+
+/* Section: welcome-section */
+#welcome-section{
+    height: 100vh;
+    background: linear-gradient(
+        45deg,rgb(0, 238, 255), rgb(0, 226, 132), rgb(136, 255, 0)
+    );
+}
+
+#welcome-section h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 5rem;
+}
+
+#welcome-section h2{
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+#welcome-section .content{
+    display: flex;
+    height: 100%;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/*Section: project */
+#project{
+    background-color: rgb(34, 34, 34);
+    color:rgb(0, 162, 255);
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+
+#project h3{
+    text-align: center;
+    padding-top: 3.5rem;
+    font-family: 'Press Start 2P';
+    font-size: 1.5rem;
+    
+}
+
+#project h4{
+    padding-top: 3.5rem;
+    font-family: 'Press Start 2P';
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+#project p{
+    font-size: 1rem;
+    color: white;
+}
+
+#project a{
+    color: white;
+}
+
+/* immage-caroussel */
+.caraoussel{
+    padding: 2rem;
+}
+
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 10 / 10;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: contain;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    top: 1.25rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #000000;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+}
+
+/* Section: projects */
+#projects{
+    background-color: rgb(34, 34, 34);
+    color:rgb(0, 162, 255);
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+
+#projects h3{
+    text-align: center;
+    padding: 2.5rem;
+    font-family: 'Press Start 2P';
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2em 2em;
+}
+
+.card{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card img{
+    width: 100%;
+    max-height: 12em;
+    object-position: 0 0;
+    object-fit: cover;
+    
+}
+
+.project-tile a{
+    display: block;
+    background-color: rgb(50,50,50);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-size: 1.25rem;
+    color:rgb(0, 162, 255);
+    text-decoration: none;
+    transition: 0.3 ease-out;
+}
+
+.project-tile a:hover{
+    background-color: rgb(0, 162, 255);
+    color: white;
+    font-weight: 400;
+}
+
+/* Section: Contact */
+#contact{
+    display: flex;
+    align-items: center;
+    min-height: 60vh;
+    background: linear-gradient(
+        45deg,rgb(136, 255, 0), rgb(0, 226, 132),rgb(0, 238, 255) 
+    );
+}
+
+#contact h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 5rem;
+}
+
+#contact h2{
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+#contact .content{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact .wrapper{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+.wrapper a{
+    display: flex;
+    align-items: baseline;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+    color: rgb(0, 38, 255);
+}
+
+.wrapper a:hover{
+    color: rgb(34,34,34);
+    transform: translateY(5px);
+}
+
+
+
+/* Section: trenner */
+
+#trenner{
+    height: 8px;
+    background-color: rgb(0, 162, 255);
+}
+
+/* Section: footer */
+#footer{
+    color: white;
+    background-color: rgb(34,34,34);
+    padding: 2rem;
+}
+
+@media (max-width:1000px){
+    .content{
+        padding-left:15px;
+        padding-right:15px;
+    }
+}
+
+@media (max-width:660px){
+    .card-wrapper{
+        display: unset;
+    }  
+    
+    .card{
+        margin-bottom: 3rem;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #navbar ul{
+        padding: 0;
+        margin: 0;
+        justify-content:center;
+        
+    }
+    #navbar li .nav-link{
+        width: 7rem;
+        font-size: 0.75rem; 
+    }
+
+    #contact .content .wrapper{
+        display: unset;
+    }
+
+    .wrapper div{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
