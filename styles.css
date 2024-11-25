@@ -283,6 +283,10 @@ nav{
     padding: 2rem;
 }
 
+#footer a{
+    color: white;
+}
+
 /* Media queries */
 
 @media (max-width:1000px){
