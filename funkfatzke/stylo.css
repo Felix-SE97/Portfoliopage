@@ -107,7 +107,7 @@ nav{
 
 /* Media Queries*/
 
-@media (max-width: 768px){
+@media (max-width:768px){
     #systeme h6{
         margin-top: 2rem;
         margin-bottom: 1rem;
