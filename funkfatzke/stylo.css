@@ -2,16 +2,17 @@
 
 :root{
     --orange: #ff420e;
-    --geld: #ff950e;
+    --gelb: #ff950e;
     --braun: #4c1900;
     --rot: red;
 }
+
 *{
     color: white
 }
 
 .gelb .container, .orange .container, .braun .container{
-    max-width: 980 px;
+    max-width: 980px;
 }
 
 .schrift-orange{
@@ -19,14 +20,14 @@
 }
 
 .trenner-rot{
-    height: 0.5 rem;
+    height: 0.5rem;
     background-color:var(--rot);
 }
 
 .gelb{
-    background-color: var(--geld) ;
-    padding-top: 4 rem;
-    padding-bottom: 4 rem;#
+    background-color: var(--gelb);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .gelb p{
@@ -35,14 +36,14 @@
 
 .orange{
     background-color: var(--orange);
-    padding-top: 4 rem;
-    padding-bottom: 4 rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .braun{
     background-color: var(--braun);
-    padding-top: 2 rem;
-    padding-bottom: 2 rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -56,7 +57,7 @@ nav{
 }
 
 #navbar ul{
-    list-styl: none;
+    list-style: none;
     display: flex;
     justify-content: end;
     margin: 0;
@@ -72,8 +73,8 @@ nav{
     display: block;
     text-decoration: none;
     cursor: pointer;
-    width: 10 rem;
-    padding-top: 1.25 rem;
+    width: 10rem;
+    padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     text-align: center;
     font-size: 1rem;
@@ -106,15 +107,15 @@ nav{
 
 /* Media Queries*/
 
-@media (max-width:768px){
+@media (max-width: 768px){
     #systeme h6{
-        margin-top: 2rem;
-        margin-bottom: 1rem;
+        margin-top: 2 rem;
+        margin-bottom: 1 rem;
     }
 
     .gelb h2{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: 2 rem;
+        margin-bottom: 2 rem;
     }
 }
 
