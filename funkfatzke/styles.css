@@ -1,0 +1,140 @@
+/*Generell: */
+
+:root{
+    --orange: #ff420e;
+    --geld: #ff950e;
+    --braun: #4c1900;
+    --rot: red;
+}
+*{
+    color: white
+}
+
+.gelb .container, .orange .container, .braun .container{
+    max-width: 980 px;
+}
+
+.schrift-orange{
+    color: var(--orange);
+}
+
+.trenner-rot{
+    height: 0.5 rem;
+    background-color:var(--rot);
+}
+
+.gelb{
+    background-color: var(--geld) ;
+    padding-top: 4 rem;
+    padding-bottom: 4 rem;#
+}
+
+.gelb p{
+    hyphens: auto;
+}
+
+.orange{
+    background-color: var(--orange);
+    padding-top: 4 rem;
+    padding-bottom: 4 rem;
+}
+
+.braun{
+    background-color: var(--braun);
+    padding-top: 2 rem;
+    padding-bottom: 2 rem;
+}
+
+
+/* Navbar */
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--orange);
+    z-index: 20;
+}
+
+#navbar ul{
+    list-styl: none;
+    display: flex;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li{
+    display: flex;
+    align-items: center;
+}
+
+#navbar li .nav-link{
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    width: 10 rem;
+    padding-top: 1.25 rem;
+    padding-bottom: 1.25rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s ease-out;
+    color:rgb(255, 255, 255);
+}
+
+#navbar li:hover .nav-link{
+    background-color: white;
+    color: var(--orange);
+    font-weight: 600;
+}
+
+/* Logobox */
+
+#logobox{
+    background-image: linear-gradient(red,red), url("src/funkgaerete.jpg");
+    background-blend-mode:color-burn;
+    background-size: cover;
+    margin-top: 64px;
+    text-align: center;
+}
+
+#logobox img{
+    width: 325px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* Media Queries*/
+
+@media (max-width:768px){
+    #systeme h6{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .gelb h2{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width:660px){
+
+    #navbar ul{
+        padding: 0;
+        margin: 0;
+        justify-content:center;
+        
+    }
+    #navbar li .nav-link{
+        width: 7rem;
+        font-size: 1rem; 
+    }
+    #logobox{
+        margin-top:58px;
+    }
+    #logobox img{
+        width: unset;
+    }
+    
+}
