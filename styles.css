@@ -294,6 +294,10 @@ nav{
         padding-left: 15px;
         padding-right: 15px;
     }
+    .card-wrapper{
+        padding-left: 100px;
+        padding-right: 100px;
+    } 
 }
 
 @media (max-width:660px){
